@@ -12,8 +12,8 @@ const { Layout } = DefaultTheme;
 const route = useRoute();
 
 const applyExternalLinkBehavior = () => {
-  document.querySelectorAll("a").forEach((link) => {
-    const isExternal = link.target === "_blank";
+  document.querySelectorAll('a[href^="http"]').forEach((link) => {
+    const isExternal = !link.href.includes(location.hostname);
     if (isExternal && !link.dataset.popupApplied) {
       link.dataset.popupApplied = "true";
       link.addEventListener("click", (e) => {
@@ -21,7 +21,7 @@ const applyExternalLinkBehavior = () => {
         window.open(
           link.href,
           "_blank",
-          "width=800,height=600,noopener,noreferrer",
+          "width=800,height=800,noopener,noreferrer",
         );
       });
     }

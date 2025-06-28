@@ -13,7 +13,7 @@ title: 2. 歴史
 | 2021 | 米インフラ企業攻撃 | 米燃料パイプライン停止、ランサム被害で社会活動に影響 |
 
 - [KDDIの記事](https://biz.kddi.com/content/column/managed_zerotrust/zerotrust_blog_02/)
-- <a href="/page/history/memo.html" target="_blank">メモ</a>
+- <PopupLink href="/page/history/memo.html">メモ</PopupLink>
 
 ## 攻撃の変化と私たちが備えるべきこと
 

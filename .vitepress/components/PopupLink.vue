@@ -5,6 +5,7 @@
     :rel="rel"
     :class="className"
     :style="style"
+    target="_blank"
   >
     <slot />
   </a>
@@ -25,7 +26,7 @@ const props = defineProps<{
 // biome-ignore lint/correctness/noUnusedVariables: "rel" is used in the template
 const openPopup = () => {
   const w = props.width ?? 800;
-  const h = props.height ?? 600;
+  const h = props.height ?? 800;
 
   // 表示位置：画面右端に寄せて表示
   const left = window.screenX + window.innerWidth - w;
