@@ -2,8 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Security Study",
-  description: "Security Study",
+  title: "セキュリティ勉強会",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
 
@@ -12,6 +11,7 @@ export default defineConfig({
         items: [
           { text: "1. 導入", link: "/page/introduction" },
           { text: "2. 歴史", link: "/page/history" },
+          { text: "3. OWASP", link: "/page/owasp" },
         ],
       },
     ],

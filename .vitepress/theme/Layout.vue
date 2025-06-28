@@ -12,8 +12,8 @@ const { Layout } = DefaultTheme;
 const route = useRoute();
 
 const applyExternalLinkBehavior = () => {
-  document.querySelectorAll('a[href^="http"]').forEach((link) => {
-    const isExternal = !link.href.includes(location.hostname);
+  document.querySelectorAll("a").forEach((link) => {
+    const isExternal = link.target === "_blank";
     if (isExternal && !link.dataset.popupApplied) {
       link.dataset.popupApplied = "true";
       link.addEventListener("click", (e) => {
