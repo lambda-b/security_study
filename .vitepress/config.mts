@@ -12,6 +12,7 @@ export default defineConfig({
           { text: "1. 導入", link: "/page/introduction" },
           { text: "2. 歴史", link: "/page/history" },
           { text: "3. OWASP", link: "/page/owasp" },
+          { text: "4. 脆弱性", link: "/page/vulnerability" },
         ],
       },
     ],
