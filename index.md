@@ -21,4 +21,5 @@ features:
     link: /page/vulnerability
   - title: 5. 最後に
     details: 終わり
+    link: /page/closing
 ---
